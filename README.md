@@ -3,10 +3,17 @@
 
 * Test_runtime : 测试runtime具体调用, hook方法交换, 黑魔法, 方法动态解析, 消息转发机制, 等.
 
-* Test_ViewAndLayer : 测试view和layer关系, 还有离屏渲染机制.
+* Test_ViewAndLayer : 测试view和layer关系, 还有离屏渲染机制, 绘图, 贝塞尔曲线等.
 
-* Test_block :
+* Test_block + BlockTestApp :
 
+* Test_timer :
 
+* Test_CTMediator : 组件化方案, 动态路由
+  CTMediator : github上别人的项目, 有助理解
+
+* SwiftLBT : 乐保通的swift尝试
+
+* eluosi : 游戏俄罗斯方块
 
 
