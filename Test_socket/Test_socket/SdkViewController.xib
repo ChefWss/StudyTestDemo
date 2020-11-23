@@ -19,14 +19,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bU-68-fqk">
-                    <rect key="frame" x="184" y="160" width="46" height="30"/>
+                    <rect key="frame" x="130" y="96" width="155" height="116"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                    <state key="normal" title="SDK初始化"/>
+                    <connections>
+                        <action selector="sdkCreateClick:" destination="-1" eventType="touchUpInside" id="Aq4-0b-8Ri"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iV7-Aw-Zlx">
+                    <rect key="frame" x="130" y="255" width="155" height="68"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="SDK发送消息"/>
+                    <connections>
+                        <action selector="sdkSendClick:" destination="-1" eventType="touchUpInside" id="CBh-fw-Dzr"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="135" y="150"/>
+            <point key="canvasLocation" x="134.78260869565219" y="150"/>
         </view>
     </objects>
     <resources>

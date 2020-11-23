@@ -74,10 +74,10 @@
 				1CE677D8256B67FD001F2129 /* AppDelegate.m */,
 				1CE677DD256B67FD001F2129 /* ViewController.h */,
 				1CE677DE256B67FD001F2129 /* ViewController.m */,
+				1CE677E0256B67FD001F2129 /* Main.storyboard */,
 				1CE677F8256BB7FD001F2129 /* SdkViewController.h */,
 				1CE677F9256BB7FD001F2129 /* SdkViewController.m */,
 				1CE677FA256BB7FD001F2129 /* SdkViewController.xib */,
-				1CE677E0256B67FD001F2129 /* Main.storyboard */,
 				1CE677E3256B67FE001F2129 /* Assets.xcassets */,
 				1CE677E5256B67FE001F2129 /* LaunchScreen.storyboard */,
 				1CE677E8256B67FE001F2129 /* Info.plist */,
@@ -100,7 +100,6 @@
 				D5149BB33773A152215D063A /* Pods-Test_socket.debug.xcconfig */,
 				8D1D487BF77BC47B8A340BB5 /* Pods-Test_socket.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
