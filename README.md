@@ -10,7 +10,7 @@
 * Test_timer :
 
 * Test_CTMediator : 组件化方案, 动态路由
-  CTMediator : github上别人的项目, 有助理解
+* CTMediator : github上别人的项目, 有助理解
 
 * SwiftLBT : 乐保通的swift尝试
 
