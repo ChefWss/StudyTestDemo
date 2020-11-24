@@ -7,7 +7,7 @@
 
 * Test_block + BlockTestApp.
 
-* Test_timer : NSTimer的中间者, 多线程, 不准确的问题.
+* Test_timer : NSTimer的中间者, 多线程, 更准确的GCDtimer.
 
 * Test_CTMediator : 组件化方案, 动态路由. (CTMediator是github上别人的项目,有助理解)
 

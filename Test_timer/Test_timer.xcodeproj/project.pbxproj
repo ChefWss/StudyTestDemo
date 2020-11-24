@@ -15,6 +15,7 @@
 		1C2B6C0225653C4F00790C82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B6C0125653C4F00790C82 /* main.m */; };
 		1C2B6C112566431800790C82 /* TimerMiddle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B6C102566431800790C82 /* TimerMiddle.m */; };
 		1C2B6C152566465C00790C82 /* TimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C2B6C142566465C00790C82 /* TimerProxy.m */; };
+		1CE67809256CB54E001F2129 /* GcdSafeTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE67808256CB54E001F2129 /* GcdSafeTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		1C2B6C102566431800790C82 /* TimerMiddle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerMiddle.m; sourceTree = "<group>"; };
 		1C2B6C132566465C00790C82 /* TimerProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerProxy.h; sourceTree = "<group>"; };
 		1C2B6C142566465C00790C82 /* TimerProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerProxy.m; sourceTree = "<group>"; };
+		1CE67807256CB54E001F2129 /* GcdSafeTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GcdSafeTimer.h; sourceTree = "<group>"; };
+		1CE67808256CB54E001F2129 /* GcdSafeTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GcdSafeTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +75,8 @@
 				1C2B6C102566431800790C82 /* TimerMiddle.m */,
 				1C2B6C132566465C00790C82 /* TimerProxy.h */,
 				1C2B6C142566465C00790C82 /* TimerProxy.m */,
+				1CE67807256CB54E001F2129 /* GcdSafeTimer.h */,
+				1CE67808256CB54E001F2129 /* GcdSafeTimer.m */,
 				1C2B6BF825653C4E00790C82 /* Main.storyboard */,
 				1C2B6BFB25653C4F00790C82 /* Assets.xcassets */,
 				1C2B6BFD25653C4F00790C82 /* LaunchScreen.storyboard */,
@@ -153,6 +158,7 @@
 				1C2B6C152566465C00790C82 /* TimerProxy.m in Sources */,
 				1C2B6C112566431800790C82 /* TimerMiddle.m in Sources */,
 				1C2B6BF725653C4E00790C82 /* ViewController.m in Sources */,
+				1CE67809256CB54E001F2129 /* GcdSafeTimer.m in Sources */,
 				1C2B6BF125653C4E00790C82 /* AppDelegate.m in Sources */,
 				1C2B6C0225653C4F00790C82 /* main.m in Sources */,
 			);

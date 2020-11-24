@@ -9,6 +9,7 @@
 #import <objc/message.h>
 #import "TimerMiddle.h"
 #import "TimerProxy.h"
+#import "GcdSafeTimer.h"
 
 @interface ViewController ()
 
@@ -27,7 +28,12 @@
     
     NSLog(@"123");
 //    [self threadTimer];
-    [self targetTimer];
+//    [self targetTimer];
+    
+    
+    [[[GcdSafeTimer alloc] init] gogogoGcdTimer];
+    
+    
 }
 
 
