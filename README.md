@@ -16,4 +16,6 @@
 
 * eluosi : 游戏俄罗斯方块
 
+* Test_socket : 原生socket写法, 和GCDAsyncSocket
+
 
