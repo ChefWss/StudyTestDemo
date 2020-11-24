@@ -7,7 +7,6 @@
 
 #import "SdkViewController.h"
 #import "GCDAsyncSocket.h" // for TCP
-#import "GCDAsyncUdpSocket.h" // for UDP
 
 @interface SdkViewController ()<GCDAsyncSocketDelegate>
 
@@ -25,45 +24,46 @@
 
 - (IBAction)sdkCreateClick:(id)sender
 {
+    NSString *host = @"127.0.0.1";
+    int port = 9997;
+    
     self.clientSocket = [[GCDAsyncSocket alloc] initWithDelegate:self delegateQueue:dispatch_get_main_queue()];
     
-    NSString *host = @"127.0.0.1";
-    uint16_t port = htons(9998);
-    
-    
     NSError *err = nil;
-    if (![self.clientSocket connectToHost:host onPort:port error:&err])
-    {
-        //  如果有错误，很可能是"已经连接"或"没有委托集"
-        NSLog(@"sdk连接错误: %@", err);
-    }
-    else
-    {
-        NSLog(@"sdk连接成功: %@", self.clientSocket);
+    [self.clientSocket connectToHost:host onPort:port error:&err];
+    if (err) {
+        NSLog(@"sdk连接失败: %@", err);
     }
 }
 
 
-
+/* 发送消息 */
 - (IBAction)sdkSendClick:(id)sender
 {
-    [self.clientSocket writeData:[@"i m sdk from" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:-1 tag:0];
+    [self.clientSocket writeData:[@"youareSB\n" dataUsingEncoding:NSUTF8StringEncoding] withTimeout:30 tag:0];
 }
 
 
 #pragma mark - delegate
+/* 连接成功 */
 - (void)socket:(GCDAsyncSocket *)sock didConnectToHost:(NSString *)host port:(uint16_t)port
 {
-    NSLog(@"delegate sdk连接成功");
+    NSLog(@"delegate sdk连接成功 %@ : %d", host, port);
     [sock readDataWithTimeout:-1 tag:0];
 }
 
-
+/* 接受消息 */
 - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag
 {
     NSString *recvString = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-    NSLog(@"delegate 服务器包返回了--回包内容: %@ ---长度%ld", recvString, data.length);
+    NSLog(@"delegate 服务器包返回了-回包内容: %@ -长度%ld", recvString, data.length);
     [sock readDataWithTimeout:-1 tag:0];
+}
+
+/* 已经断开连接 */
+- (void)socketDidDisconnect:(GCDAsyncSocket *)sock withError:(NSError *)err
+{
+    NSLog(@"delegate socket 断开连接");
 }
 
 /*
