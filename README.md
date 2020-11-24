@@ -8,11 +8,9 @@
 ```
 ```
 * Test_block + BlockTestApp.
-<<<<<<< HEAD
-
+```
+```
 * Test_timer : NSTimer的中间者, 多线程, 更准确的GCDtimer.
-
-=======
 ```
 ```
 * Test_timer : NSTimer的中间者, 多线程, 不准确的问题.
