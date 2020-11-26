@@ -27,4 +27,6 @@
 ```
 * Test_socket : 简易原生socket写法, 和GCDAsyncSocket.
 ```
-
+```
+* Test_alloc_init : 探究alloc内部, 内存分配等
+```
