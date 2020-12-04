@@ -30,3 +30,6 @@
 ```
 * Test_alloc_init : 探究alloc内部, 内存分配等
 ```
+```
+* Test_thread : 线程锁
+```
