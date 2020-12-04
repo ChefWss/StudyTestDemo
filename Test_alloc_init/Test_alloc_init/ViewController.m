@@ -43,7 +43,19 @@
 
     // 3种断点方式(包括符号断点)查看alloc内部实现(汇编和C++)
     // 详见 视频课第一天001 , 和boundle里面的大师班第一天.png
+    
+    NSInteger width = 100;
+    NSInteger height = 80;
+    NSInteger all = width * height;
+    
+    NSLog(@"%ld --- %ld", (long)all, [self aaaa]);
 }
 
+
+- (NSInteger)aaaa {
+    int a = 100;
+    int b = 200;
+    return (a + b);
+}
 
 @end
