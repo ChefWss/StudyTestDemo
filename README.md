@@ -34,5 +34,5 @@
 * Test_thread : 线程锁
 ```
 ```
-*  Test_arithmetic : 算法
+* Test_arithmetic : 算法
 ```
