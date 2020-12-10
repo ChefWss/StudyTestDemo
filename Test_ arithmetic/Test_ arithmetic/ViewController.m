@@ -32,12 +32,17 @@
 //    [self maopao];
 //    [self xuanze];
 //    [self charu];
-    [self suanfati_2ArrayIntersection];
-    
-    
 //    NSLog(@"数组个数: %ld, 循环: %ld\n%@", self.array1.count, self.circle, self.array1);
-
+    
+    
+//    [self suanfati_2ArrayIntersection];
+    
+    
+//    NSMutableArray *arr = @[@1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15].mutableCopy;
+//    [self suanfati_2withArray:arr withK:6 add:@[].mutableCopy];
 }
+
+
 
 
 - (void)maopao
@@ -188,6 +193,36 @@
     }
     
     NSLog(@"排序+双指针法: %@", xArr);
+}
+
+
+
+- (void)suanfati_2withArray:(NSMutableArray *)arr withK:(int)k add:(NSMutableArray *)addArr
+{
+    // 算法题: 单向链表每k个元素翻转一次（图解）
+    // TODO: 没写完,还有末尾不整除的问题
+    
+    int len = (int)arr.count;
+        for (int i = 0; i < len - (len % k); i++) {
+            if (i % k == floor(k / 2.0)) {
+                for (int j = 0; j < floor(k / 2.0) ; j++) {
+                    [arr exchangeObjectAtIndex:i-j-1 withObjectAtIndex:i+j+(k%2)];
+                }
+            }
+        }
+    
+    NSLog(@"%@", arr);
+        
+//    if (len % k != 0) {
+//        NSMutableArray *lastArr = @[@13,@14,@15].mutableCopy;
+//        [self suanfati_2withArray:lastArr withK:(int)lastArr.count add:arr];
+//        [arr replaceObjectsInRange:NSMakeRange(len-(len % k), len % k) withObjectsFromArray:lastArr];
+//        return nil;
+//    }
+//    else {
+//        NSLog(@" 结果  %@", addArr);
+//        return addArr;
+//    }
 }
 
 
