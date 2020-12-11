@@ -28,11 +28,14 @@
 * Test_socket : 简易原生socket写法, 和GCDAsyncSocket.
 ```
 ```
-* Test_alloc_init : 探究alloc内部, 内存分配等
+* Test_alloc_init : 探究alloc内部, 内存分配等.
 ```
 ```
-* Test_thread : 线程锁
+* Test_thread : 线程锁.
 ```
 ```
-* Test_arithmetic : 排序算法 + 几道常见算法题
+* Test_arithmetic : 排序算法 + 几道常见算法题.
+```
+```
+* Test_copy_mutableCopy : 深拷贝浅拷贝, 搭配可变不可变区别.
 ```
