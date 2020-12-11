@@ -37,5 +37,5 @@
 * Test_arithmetic : 排序算法 + 几道常见算法题.
 ```
 ```
-* Test_copy_mutableCopy : 深拷贝浅拷贝, 搭配可变不可变区别.
+* Test_copy_mutableCopy : 深拷贝浅拷贝, 修饰可变不可变的结果区别.
 ```
