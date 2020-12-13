@@ -7,6 +7,9 @@
 * Test_ViewAndLayer : 测试view和layer关系, 还有离屏渲染机制, 绘图, 贝塞尔曲线等.
 ```
 ```
+* Test_coreAnimation : 探究粒子动画.
+```
+```
 * Test_block + BlockTestApp.
 ```
 ```
