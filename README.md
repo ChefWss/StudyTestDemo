@@ -7,16 +7,13 @@
 * Test_ViewAndLayer : 测试view和layer关系, 还有离屏渲染机制, 绘图, 贝塞尔曲线等.
 ```
 ```
-* Test_coreAnimation : 探究粒子动画.
+* Test_coreAnimation : 探究粒子动画. (anaimation: 辅助理解 coreanimation)
 ```
 ```
 * Test_block + BlockTestApp.
 ```
 ```
 * Test_timer : NSTimer的中间者, 多线程, 更准确的GCDtimer.
-```
-```
-* Test_timer : NSTimer的中间者, 多线程, 不准确的问题.
 ```
 ```
 * Test_CTMediator : 组件化方案, 动态路由. (CTMediator是github上别人的项目,有助理解)
