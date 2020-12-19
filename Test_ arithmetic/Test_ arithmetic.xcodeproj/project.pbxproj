@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C3BDB57258E30C9004D87DE /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BDB56258E30C9004D87DE /* BinaryTreeNode.m */; };
+		1C3BDB5B258E31D2004D87DE /* TestBinaryTree.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3BDB5A258E31D2004D87DE /* TestBinaryTree.m */; };
 		1C7FE0A7258078C00070556B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FE0A6258078C00070556B /* AppDelegate.m */; };
 		1C7FE0AA258078C00070556B /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FE0A9258078C00070556B /* SceneDelegate.m */; };
 		1C7FE0AD258078C00070556B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7FE0AC258078C00070556B /* ViewController.m */; };
@@ -17,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C3BDB55258E30C9004D87DE /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		1C3BDB56258E30C9004D87DE /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
+		1C3BDB59258E31D2004D87DE /* TestBinaryTree.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestBinaryTree.h; sourceTree = "<group>"; };
+		1C3BDB5A258E31D2004D87DE /* TestBinaryTree.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestBinaryTree.m; sourceTree = "<group>"; };
 		1C7FE0A2258078C00070556B /* Test_ arithmetic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Test_ arithmetic.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C7FE0A5258078C00070556B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1C7FE0A6258078C00070556B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +73,10 @@
 				1C7FE0A9258078C00070556B /* SceneDelegate.m */,
 				1C7FE0AB258078C00070556B /* ViewController.h */,
 				1C7FE0AC258078C00070556B /* ViewController.m */,
+				1C3BDB59258E31D2004D87DE /* TestBinaryTree.h */,
+				1C3BDB5A258E31D2004D87DE /* TestBinaryTree.m */,
+				1C3BDB55258E30C9004D87DE /* BinaryTreeNode.h */,
+				1C3BDB56258E30C9004D87DE /* BinaryTreeNode.m */,
 				1C7FE0AE258078C00070556B /* Main.storyboard */,
 				1C7FE0B1258078C20070556B /* Assets.xcassets */,
 				1C7FE0B3258078C20070556B /* LaunchScreen.storyboard */,
@@ -145,9 +155,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C3BDB5B258E31D2004D87DE /* TestBinaryTree.m in Sources */,
 				1C7FE0AD258078C00070556B /* ViewController.m in Sources */,
 				1C7FE0A7258078C00070556B /* AppDelegate.m in Sources */,
 				1C7FE0B8258078C20070556B /* main.m in Sources */,
+				1C3BDB57258E30C9004D87DE /* BinaryTreeNode.m in Sources */,
 				1C7FE0AA258078C00070556B /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

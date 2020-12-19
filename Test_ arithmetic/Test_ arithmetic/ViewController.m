@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "TestBinaryTree.h"
 
 @interface ViewController ()
 
@@ -40,6 +41,10 @@
     
 //    NSMutableArray *arr = @[@1,@2,@3,@4,@5,@6,@7,@8,@9,@10,@11,@12,@13,@14,@15].mutableCopy;
 //    [self suanfati_2withArray:arr withK:6 add:@[].mutableCopy];
+    
+    
+    
+    TestBinaryTree *test = [[TestBinaryTree alloc] init];
 }
 
 
@@ -152,7 +157,7 @@
     return;
     
     /*
-     方法二：排序 + 双指针 (得到的是不重复的值)
+     (2个有序数组可以用->) 方法二：排序 + 双指针 (得到的是不重复的值)
      如果两个数组是有序的，则可以使用双指针的方法得到两个数组的交集。
 
      首先对两个数组进行排序，然后使用两个指针遍历两个数组。可以预见的是加入答案的数组的元素一定是递增的，为了保证加入元素的唯一性，我们需要额外记录变量pre 表示上一次加入答案数组的元素。
