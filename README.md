@@ -34,7 +34,7 @@
 * Test_thread : 线程锁.
 ```
 ```
-* Test_arithmetic : 排序算法 + 几道常见算法题 + 二叉树知识点.
+* Test_arithmetic : 排序算法 + 几道常见算法题 + 二叉树相关知识点.
 ```
 ```
 * Test_copy_mutableCopy : 深拷贝浅拷贝, 修饰可变不可变的结果区别.
