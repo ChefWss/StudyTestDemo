@@ -24,6 +24,11 @@
         NSInteger value = [values[i] integerValue];
         rootNode = [BinaryTreeNode addBinaryTreeNode:rootNode addValue:value];
     }
+    
+    [BinaryTreeNode preOrderTraverseTree:rootNode handler:^(BinaryTreeNode *treeNode) {
+        NSLog(@"遍历:%ld",treeNode.value);
+    }];
+    
     NSLog(@"root:%ld   left:%ld   right:%ld   临时:%ld   深度:%ld   总节点数:%ld",
           rootNode.value,
           rootNode.leftNode.value,
@@ -103,6 +108,24 @@
     NSInteger all = leftAll + rightAll + 1;
     NSLog(@"all:%ld", all);
     return all;
+}
+
+
+/**
+ *  先序遍历
+ *  先访问根，再遍历左子树，再遍历右子树
+ *  @param rootNode 根节点
+ *  @param handler  访问节点处理函数
+ */
++ (void)preOrderTraverseTree:(BinaryTreeNode *)rootNode handler:(void(^)(BinaryTreeNode *treeNode))handler {
+    if (rootNode) {
+        if (handler) {
+            handler(rootNode);
+        }
+        
+        [self preOrderTraverseTree:rootNode.leftNode handler:handler];
+        [self preOrderTraverseTree:rootNode.rightNode handler:handler];
+    }
 }
 
 
