@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C27539025903B5F00D0EDB8 /* A.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C27538F25903B5F00D0EDB8 /* A.m */; };
 		1CD8A01C2583095D005E669A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8A01B2583095D005E669A /* AppDelegate.m */; };
 		1CD8A01F2583095D005E669A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8A01E2583095D005E669A /* SceneDelegate.m */; };
 		1CD8A0222583095D005E669A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD8A0212583095D005E669A /* ViewController.m */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C27538E25903B5F00D0EDB8 /* A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = A.h; sourceTree = "<group>"; };
+		1C27538F25903B5F00D0EDB8 /* A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = A.m; sourceTree = "<group>"; };
 		1CD8A0172583095D005E669A /* Test_copy_mutableCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Test_copy_mutableCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD8A01A2583095D005E669A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CD8A01B2583095D005E669A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				1CD8A01E2583095D005E669A /* SceneDelegate.m */,
 				1CD8A0202583095D005E669A /* ViewController.h */,
 				1CD8A0212583095D005E669A /* ViewController.m */,
+				1C27538E25903B5F00D0EDB8 /* A.h */,
+				1C27538F25903B5F00D0EDB8 /* A.m */,
 				1CD8A0232583095D005E669A /* Main.storyboard */,
 				1CD8A0262583095F005E669A /* Assets.xcassets */,
 				1CD8A0282583095F005E669A /* LaunchScreen.storyboard */,
@@ -145,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C27539025903B5F00D0EDB8 /* A.m in Sources */,
 				1CD8A0222583095D005E669A /* ViewController.m in Sources */,
 				1CD8A01C2583095D005E669A /* AppDelegate.m in Sources */,
 				1CD8A02D2583095F005E669A /* main.m in Sources */,

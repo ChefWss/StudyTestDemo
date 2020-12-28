@@ -28,6 +28,8 @@
     self.array2 = @[@16,@3,@999,@3,@0].mutableCopy;
     
     NSLog(@"算法");
+    
+    [self kuaisu_arr:_array1 withLowIndex:0 withHighIndex:_array1.count-1];
 
     
 //    [self maopao];
@@ -44,7 +46,7 @@
     
     
     
-    TestBinaryTree *test = [[TestBinaryTree alloc] init];
+//    TestBinaryTree *test = [[TestBinaryTree alloc] init]; //二叉树
 }
 
 
@@ -108,6 +110,44 @@
 - (void)kuaisu
 {
     // 快速排序:
+}
+
+- (void)kuaisu_arr:(NSMutableArray *)array withLowIndex:(NSInteger)lowIndex withHighIndex:(NSInteger)highIndex
+{
+    NSLog(@"lowindex:%ld  highindex:%ld", lowIndex, highIndex);
+    
+    if (lowIndex >= highIndex) {
+        return;
+    }
+    
+    NSInteger i = lowIndex;
+    NSInteger j = highIndex;
+    NSInteger kValue = [array[i] integerValue];
+    
+    while (i < j) {
+        
+        // 从后面找比key小的
+        while (i < j && [array[j] integerValue] >= kValue) {
+            j--;
+        }
+        array[i] = array[j];
+        
+        // 从前面找比key大的
+        while (i < j && [array[i] integerValue] <= kValue) {
+            i++;
+        }
+        array[j] = array[i];
+        
+    }
+    
+    // 直到 i = j, 一次排序结束
+    array[j] = @(kValue);
+    
+    [self kuaisu_arr:array withLowIndex:lowIndex withHighIndex:i-1];
+    [self kuaisu_arr:array withLowIndex:i+1 withHighIndex:highIndex];
+        
+    NSLog(@"%@", array);
+    
 }
 
 
